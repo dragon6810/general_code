@@ -75,7 +75,7 @@ if choice == 1:
 A monster jumps out of the mirror! You get a quick glimpse
 of the monster and you see a piston that made you realize that's
 why you heard the bang (the piston made the bang when it hit
-the wall) you then see your wife's dead body.
+the wall).
 
 You teleport to a house in the middle of the wasteland.
 
@@ -130,3 +130,40 @@ You find a lava pit; and then see a monster. What do you do?
 elif choice == 2 or choice == 3:
 	print( """You die.""" )
 	quit()
+
+	print('You see a door. You walk in. It is a room of riddles! The first one is "what has more lives than a cat?"')
+	riddle_1 = raw_input("Your answer?")
+	if choice == "a frog" or choice == "frog":
+		print("correct!")
+	else:
+		print("that was not the correct answer. A lazer hits you. You die.")
+		quit()
+		print "You get a key."
+		print 'The next riddle is "what is black and white, and red all over?".'
+		riddle_2 = raw_input("Your answer?")
+		if choice == "a blushing zebra" or "blushing zebra":
+			print "Correct!"
+		else:
+			print "That was the incorrect answer. Five knives stab you. You die."
+			quit()
+			print '''You get a key. The next riddle is "There was a ship with 20 people. It sinks. Twenty-four heads pop up. How?"'''
+			riddle_3 = raw_input("Your answer?")
+if choice == "twenty for heads" or "for heads":
+	print "Correct!"
+else:
+	print "Incorrect."
+	quit()
+	print "You get a key. A door opens. You are out of the room of riddles!"
+	print "You get a door. None of the keys fit!"
+	print "What do you do?"
+	print """
+	1-you wait here until it opens
+	2-you pound on it
+	3-you try all the keys again
+	"""
+	if choice == 1:
+		print "After a few hours, it opens."
+	else:
+		print "You die."
+		quit()
+		print "You walk in."
